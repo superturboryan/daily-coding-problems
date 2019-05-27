@@ -27,5 +27,26 @@ const targetSumArrayInt = (input, target) => {
    return false
 }
 
-console.log(targetSumArrayInt([10, 15, 3, 7], 17))
+// console.log(targetSumArrayInt([10, 15, 3, 7], 17))
 //Should return true
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Solution 2 - one pass?
+
+const targetSumArrayInt2 = (input, target) => {
+
+   input.forEach((num, index) => {
+
+      let newArr = input.slice(0, index).concat(input.slice(index + 1, input.length))
+
+      newArr.forEach(addition => {
+
+         if (num + addition === target) return true
+      })
+   })
+
+   return false
+}
+
+console.log(targetSumArrayInt([10, 15, 3, 7], 17))
