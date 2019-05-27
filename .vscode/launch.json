@@ -8,7 +8,7 @@
          "type": "node",
          "request": "launch",
          "name": "Launch Program",
-         "program": "${workspaceFolder}/problem2-product-array-integers.js"
+         "program": "${workspaceFolder}/problem1-target-sum-array-int.js"
       }
    ]
 }
