@@ -8,7 +8,7 @@
          "type": "node",
          "request": "launch",
          "name": "Launch Program",
-         "program": "${workspaceFolder}/problem1-target-sum-array-int.js"
+         "program": "${workspaceFolder}/problem47-largest-profit-array.js"
       }
    ]
 }
