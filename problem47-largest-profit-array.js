@@ -7,7 +7,7 @@
 const largestProfit = inputArray => {
 
    let largestProfit = 0;
-   let profit = 0;
+   let runningProfit = 0;
    let currentValue = inputArray[0];
 
    for (let i = 1; i < inputArray.length; i++) {
@@ -16,16 +16,16 @@ const largestProfit = inputArray => {
       console.log("Next val: " + inputArray[i])
 
       if (currentValue <= inputArray[i]) {
-         let runningProfit = inputArray[i] - currentValue
-         profit += runningProfit
+         let profit = inputArray[i] - currentValue
+         runningProfit += profit
       }
       else {
-         profit = 0;
+         runningProfit = 0;
       }
 
-      console.log("Profit: " + profit)
+      console.log("Profit: " + runningProfit)
 
-      profit > largestProfit ? largestProfit = profit : null
+      runningProfit > largestProfit ? largestProfit = runningProfit : null
 
       currentValue = inputArray[i]
    }
@@ -33,4 +33,5 @@ const largestProfit = inputArray => {
    return largestProfit;
 }
 
-console.log("The largest profit from the input array is: " + largestProfit([1, 3, 2, 4, 6, 8, 9, 8, 11]))
+let input = [1, 3, 2, 4, 6, 8, 9, 8, 11, 19]
+console.log("The largest profit from the input array is: " + largestProfit(input))
