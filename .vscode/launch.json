@@ -8,7 +8,7 @@
          "type": "node",
          "request": "launch",
          "name": "Launch Program",
-         "program": "${workspaceFolder}/problem66-cark-park-escape.js"
+         "program": "${workspaceFolder}/problem212-spreadsheet-alphabetical-encoding.js"
       }
    ]
 }

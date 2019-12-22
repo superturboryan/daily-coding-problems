@@ -154,7 +154,7 @@ function escape(carpark) {
       }
 
       //The exit will be on the ride side of the parking level, length - 1
-      let exit = carpark[0].length - 1
+      let exit = carpark[i].length - 1
       //Check if the escapee is at the exit, if so, he's escaped!
       if (position == exit) {
          return route;
@@ -180,9 +180,9 @@ function checkStairs(spot) {
 
 
 
-let result = escape([[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]);
+let result = escape([[0, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]);
 
-console.log("Escape route from lot: " + result);
+console.log("Escape route from car park: " + result);
 
 //expected: ["R10"]
 
