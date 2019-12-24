@@ -11,9 +11,23 @@
 // There are no smaller elements to the right of 1
 
 const largestToTheRight = inputArray => {
-
    let newArray = Array()
+   for (index in inputArray) {
+      // console.log("Current index for slice: " + (Number(index)+1) + "\nNumber iterated over: " + inputArray[index])
+      let slice = inputArray.slice(Number(index)+1)
+      let count = 0
 
-
+      for (number of slice) {
+         if (number < inputArray[index]) {
+            count += 1
+         }
+      }
+      newArray.push(count)
+   }
+   console.log(newArray)
    return newArray;
 }
+
+let input = [3,4,9,6,1]
+
+let answer = largestToTheRight(input)

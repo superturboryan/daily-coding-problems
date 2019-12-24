@@ -8,7 +8,7 @@
          "type": "node",
          "request": "launch",
          "name": "Launch Program",
-         "program": "${workspaceFolder}/problem212-spreadsheet-alphabetical-encoding.js"
+         "program": "${workspaceFolder}/problem165-largest-to-the-right.js"
       }
    ]
 }
