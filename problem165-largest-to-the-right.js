@@ -28,6 +28,6 @@ const largestToTheRight = inputArray => {
    return newArray;
 }
 
-let input = [3,4,9,6,1]
+let input = [3,4,9,6,1,2,3,4,5]
 
 let answer = largestToTheRight(input)
